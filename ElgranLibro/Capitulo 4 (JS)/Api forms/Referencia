@@ -1,0 +1,23 @@
+setCustomValidity
+Cuadro de texto de que algo es invalido
+
+change
+evento de un tipo range
+
+
+invalid 
+evento de invalido para un form 
+
+
+checkValidity()
+para formularios revisa si esta validado o no
+
+
+
+e.target.validity.................
+accesar a la api de validaciones
+
+
+
+
+

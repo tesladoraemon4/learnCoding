@@ -1,0 +1,134 @@
+body {
+	text-align: center;
+}
+#principalEjemplo {
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #FF0000;
+
+
+	/*
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	*/
+	/*Empiezan de esquina superior izquierda
+	en sentido de las manesillas del reloj
+	-webkit-border-radius: 15px 15px 90px 90px;
+	
+	Radio horizontal / radio vertical*/
+	-webkit-border-radius: 15px 15px 90px 90px / 35px 35px 120px 120px;
+
+	/*
+		GENERAR SOMBRAS
+		color rgb, desplazamiento en x y, difuminacion 
+		inset difuminacion interna
+	*/
+	-webkit-box-shadow: rgb(150,150,150) 12px 12px 30px;
+
+
+	/*posicion inicio, color inicial punto de terminacion (opcional) 
+	y color final punto de terminacion(opcinal)
+	background: -webkit-linear-gradient(top,#FFFFFF 10%,#006699 90%);
+	*/
+	
+	background: radial-gradient(left, circle, #FFFFFF 10%, #006699 200%);
+
+	/*GENERAR UN BORDE
+	ancho, tipo de linea, color de linea*/
+	outline: 2px dashed hsla(360,90%,50%,.5);
+	/*Separacion del borde*/
+	outline-offset:5px; 
+
+
+
+	/*generar bordes con una imagen
+	Borde con la imagen nave.jpg tamaño de los bordes , distribucion del borde
+	-webkit-border-image: url("nave.jpg") 19 stretch;
+	*/
+
+
+
+
+}
+#titulo {
+	font: bold 36px verdana, sans-serif;
+	/*
+		SOMBRAS PARA FIGURAS IRREGULARES
+		text-shadow: rgb(0,0,150) 3px 3px 5px;
+	*/
+
+
+	/*
+		colores RGA y la opacidad (agrega transparencia)
+		
+	*/
+	text-shadow:rgba(234,345,0,.5) 3px 3px 5px;
+
+	/*	
+		hsla  solo genera colores
+		tono,saturacion,luminosidad,opacidad
+	*/
+	color : hsla(250,90%,50%,.5);
+
+
+
+}
+
+/*Agregar otros tipos de fuentes
+@font-face{
+	font-family: 'miFuente';
+	src:url('Minecrafter.Reg');
+}
+*/
+
+#principal {
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #FF0000;
+
+	/*Hacer transformacion de valores */
+
+
+	-webkit-transform: scale(1,-1);
+	-webkit-transform : rotate(30deg);
+	/*mover en grados los elementos*/
+	-webkit-transform :skew(0deg,0deg);
+
+	/*Esquina superior izquierda es es 0,0
+	-webkit-transform:translate(100px,250px);*/
+
+
+
+	/*FIJAR TIEMPO ENTRE TRASCICION
+	propiedad a cambiar tiempo de estado inicial a final , palabra clave  y tiempo de retardo
+	ease, linear, ease-in, ease-out o ease-in-out. 
+	*/
+
+	-webkit-transition:-webkit-transform .5s , ease-out .3s;
+
+
+}
+
+
+#principal:focus{
+	-webkit-transform:rotate(20deg);
+	-webkit-transform:rotate(-20deg);
+
+}
+
+
+
+#principal:hover{
+	-webkit-transform: rotate(20deg);
+
+	-webkit-transform: rotate(-20deg);
+}

@@ -1,0 +1,23 @@
+progress Este evento es disparado periódicamente para informar acerca del progreso de la descarga del medio. La
+información estará disponible a través del atributo buffered, como veremos más adelante.
+canplaythrough Este evento es disparado cuando el medio completo puede ser reproducido sin interrupción. El estado
+es establecido considerando la actual tasa de descarga y asumiendo que seguirá siendo la misma durante el resto
+del proceso. Existe otro evento más para este propósito, canplay, pero no considera toda la situación y es
+disparado tan pronto como algunas partes del medio se encuentran disponibles (luego de descargar los primeros
+cuadros de un video, por ejemplo).
+ended Es disparado cuando el reproductor llega al final del medio.
+pause Es disparado cuando el reproductor es pausado.
+play Es disparado cuando el medio comienza a ser reproducido.
+error Este evento es disparado cuando ocurre un error. Es relacionado con el elemento <source> correspondiente a la
+fuente del medio que produjo el error.
+play() Este método comienza a reproducir el medio desde el inicio, a menos que el medio haya sido pausado
+previamente.
+pause()Este método pausa la reproducción.
+load()Este método carga el archivo del medio. Es útil en aplicaciones dinámicas para cargar el medio anticipadamente.
+canPlayType(formato) Con este método podemos saber si el formato del archivo es soportado por el navegador o no.
+
+
+
+
+
+

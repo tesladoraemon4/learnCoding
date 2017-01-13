@@ -1,0 +1,57 @@
+footer{
+	color: blue;
+
+}
+
+
+
+/*nth-child es una pseudo clase 
+	sirve para encontrar un hijo especifico de 
+	algun elemento
+
+
+Hace referencia a elementos pares o impares
+even odd
+
+	p:nth-child(even){
+		background: blue;
+	}
+
+Hace referencia a el elemento numero 
+x de todos los p
+	p:nth-child(1){
+		background: blue;
+	}
+
+
+p:first-child{
+	background: blue;
+}
+*{
+	background: red;
+}
+:not(#exp){//Sirve para hacer una excepcion
+	
+	
+	background: blue;
+}
+
+*/
+p{
+	color: red;
+}
+/*todos los padres de un div */
+div > p{
+	color: gray;
+}
+/*Los elementos nav precedidos de un p
+	p + nav{
+		color: yellow;
+	}
+*/
+
+#exp - nav {
+	color: blue;
+}
+
+

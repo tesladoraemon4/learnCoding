@@ -1,0 +1,11 @@
+.tipoText:hover{
+	-webkit-transform: rotate(250deg);
+}
+
+
+#formul{
+	text-align: center;
+	background: red;
+	-webkit-transform: traslate(1000px,100px);
+
+}

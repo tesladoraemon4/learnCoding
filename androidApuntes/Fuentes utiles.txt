@@ -1,0 +1,7 @@
+https://geekytheory.com/como-obtener-informacion-sobre-la-pantalla-en-android/
+
+layout-large  
+Carpeta de layouts para pantallas largas
+
+layout-large-port
+Pantalla grande con orientacion vertical

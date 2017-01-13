@@ -1,0 +1,45 @@
+Hay 3 componentes en de la aplicacion android. Son activados por un intends
+*Actividad (Solo me muestra 1 pero puede haber muchas)
+*Service(no es visible)
+*Broadcast o receptores de difusion(Reciben un broadcast)
+*content provider (proveedor de servicios)
+//////////////////////////////////////
+Librerias
+Dagger = dependencias
+butterKNIFE = vistas (vistas sencillas de la aplicacion)
+Es decir que no uses FindViewByID()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IMPLEMENTAR PAGOS 
+In-app Billing
+
+
+
+
+
+
+
+
+
+
+
+
+
+

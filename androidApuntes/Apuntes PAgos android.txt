@@ -1,0 +1,89 @@
+In-app billing 
+TIPOS DE PRODUCTOS 
+*administrados
+-+consumibles
+Ejem: posimas, vidas , armas etc...
+Una vez terminada la compra avisar a google play que el producto se a consumido y alamacenar que se adquirio una unidad 
+-+No consumibles 
+Ejem: niveles, cuenta premium etc..
+*Suscripciones.
+se adquieres 1 vez y puedes tener una version gratis de prueba.
+NOTA: no se puede modificar el precio ni el periodo de facturación.
+
+IMPLEMENTACIÓN
+
+1.-Primero añadimos el permiso al manifest
+
+<uses-permission android:name="com.android.vending.BILLING" />
+
+2.-Importamos la libreria a la siguiente ruta.
+
+ruta /com/android/vending/billing 
+
+Creamos items
+1.- hacer un package con el nombre items. (una clase sera un item)
+2.- Declaramos un identificador .
+public class Premium {  
+    public static final String SKU = "premium_item";
+}
+3.- subimos el apk a la consola de desarrollador con el permiso BILLING configuramos el item con el mismo nombre que el identificador.
+
+
+
+SACANDO LA CLAVE.
+
+1.- En servicios y apis de la consola de desarrollador podemos obtener la clave de desarrolador.
+
+CODIFICANDO
+
+clase InAppBillingService nos ayudara a conectarnos con el el servicio de google.
+
+1.- importamos com.android.vending.billing.util.*;
+2.- implementamos 2 listeners 
+	implements IabHelper.OnIabSetupFinishedListener, 
+	IabHelper.OnIabPurchaseFinishedListener
+3.- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

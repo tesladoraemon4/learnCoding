@@ -1,0 +1,46 @@
+VIEWPAGER 
+***********************
+Table layout
+***********************
+android:collapseColumns 
+Propiedad que oculta las columnas de un indice x (vertical)
+
+android:lines numero maximo de lineas que puede 
+
+android:shrinkColumns= 
+adapta las columnas 
+
+android:stretchColumns
+Expande columnas 
+***********************
+ScrollView
+***********************
+android:fillViewport
+Es estirar el contenido para llenar la ventana grafica 
+
+android:scrollbars="vertical" 
+Permite scrollear la barra de croll
+
+
+
+
+
+***********************
+Responsive designig carpetas
+***********************
+Nombre de carpetas
+values-w860dp
+
+
+
+***********************
+ Métodos De Entrada (IME) en inputtext
+***********************
+android:imeOptions
+
+
+
+
+
+
+
